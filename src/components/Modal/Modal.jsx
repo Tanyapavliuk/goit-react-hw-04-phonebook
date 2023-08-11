@@ -13,7 +13,7 @@ function Modal({ children, onClose }) {
   useEffect(() => {
     window.addEventListener('keydown', onClickEsc);
     return window.removeEventListener('keydown', onClickEsc);
-  }, []);
+  });
 
   const onClickBackdrop = e => {
     if (e.currentTarget === e.target) {
